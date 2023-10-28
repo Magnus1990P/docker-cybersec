@@ -1,0 +1,13 @@
+version: '3'
+
+volumes:
+  pwnbox_share:
+    driver: local
+
+
+services:
+  pwnbox:
+    image: deadpackets/pwnbox
+    container_name: pwnbox
+    volumes:
+      - ../raw/data:/mnt
